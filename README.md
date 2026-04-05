@@ -1,13 +1,69 @@
-# vagrant
+# 🚀 Vagrant Environments
 
-*** k8s ***
+A collection of ready-to-use **Vagrant configurations** for quickly deploying local virtual machines for development, testing, and Kubernetes labs.
 
-Create required master and workers nodes with additional interface, compute resourses and adding user ssh public key.
+---
 
-*** ubuntu ***
+## 📦 Available Environments
 
-Simple VM for test purpose with adding user's ssh public key.
+### ☸️ `k8s`
 
-*** ubuntuMultiple ***
+Create the required **master** and **worker nodes** with:
 
-Create required number of VM's with adding user's ssh public key and compute resourses
+* 🌐 Additional network interface
+* 💻 Configurable compute resources (CPU / RAM)
+* 🔑 Automatic injection of the user's SSH public key
+
+Perfect for building and testing a local Kubernetes cluster.
+
+---
+
+### 🐧 `ubuntu`
+
+A simple **Ubuntu virtual machine** for testing purposes.
+
+Includes:
+
+* 🔑 User SSH public key setup
+* ⚡ Fast and lightweight deployment
+
+Ideal for quick experiments and sandbox environments.
+
+---
+
+### 🖥️ `ubuntuMultiple`
+
+Create the required number of **Ubuntu virtual machines** with:
+
+* 🔢 Configurable VM count
+* 💻 Adjustable compute resources
+* 🔑 User SSH public key injection
+
+Useful for multi-node testing, networking labs, and distributed setups.
+
+---
+
+## ✨ Features
+
+* Easy local environment provisioning
+* Reusable infrastructure templates
+* GitHub-friendly Markdown formatting
+* Clean and readable structure
+
+---
+
+## 🛠️ Usage
+
+```bash
+vagrant up
+```
+
+To destroy the environment:
+
+```bash
+vagrant destroy -f
+```
+
+---
+
+> Built for fast local development and testing with Vagrant.
